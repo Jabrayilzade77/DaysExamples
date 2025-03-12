@@ -8,9 +8,14 @@ public class StringTokensApp {
 
         String[] tokens = s.trim().split("[^A-Za-z]+");
 
-        System.out.println(tokens.length);
-        for(String token : tokens) {{
-            System.out.println(token);}
+        if(s.trim().isEmpty()) {
+            System.out.println(0);
+        }
+        else{
+            System.out.println(tokens.length);
+            for(String token : tokens) {{
+                System.out.println(token);}
+            }
         }
 
     }
